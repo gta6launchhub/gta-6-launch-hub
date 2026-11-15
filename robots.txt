@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gta6launchhub.github.io/gta-6-launch-hub/sitemap.xml
