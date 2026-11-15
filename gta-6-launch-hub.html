@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="GTA 6 Launch Hub — live countdown to the November 19, 2026 launch, global unlock times, edition prices, pre-load guide and PC version status. An unofficial fan-made page with original content." />
+    <meta name="google-site-verification" content="-XHCZgR3O7FdEalFCEiBvBY_D4gMS9QnNUFRTFToC6w" />
+    <link rel="icon" href="data:," />
+    <title>GTA 6 Launch Hub — Countdown, Unlock Times, Prices &amp; Pre-Load Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]) { min-height: 2rem; }
+      a { min-height: 2rem; }
+    </style>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fdf4ea;
+        --bg-deep: #f7e3d3;
+        --panel: #ffffff;
+        --panel-2: #fff7ee;
+        --ink: #241233;
+        --muted: #5f4a75;
+        --faint: #8a76a3;
+        --line: #ecd9c8;
+        --pink: #d81e63;
+        --pink-soft: #fde3ee;
+        --orange: #e85d1f;
+        --amber: #b97a06;
+        --teal: #0e7a6d;
+        --teal-soft: #dcf3ee;
+        --sun-1: #ffd23e;
+        --sun-2: #ff7a3d;
+        --sun-3: #f43f8e;
+        --sky-1: #ffe9c9;
+        --sky-2: #ffd3e0;
+        --silhouette: #3a1c5e;
+        --shadow: 0 10px 30px rgba(90, 30, 60, .10);
+        --radius: 14px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --bg: #0d0919;
+          --bg-deep: #080614;
+          --panel: #171130;
+          --panel-2: #1d1740;
+          --ink: #f6f1ff;
+          --muted: #bcb0dd;
+          --faint: #8d7fb5;
+          --line: #2e2560;
+          --pink: #ff4d8d;
+          --pink-soft: #33122a;
+          --orange: #ff8a3d;
+          --amber: #ffc53d;
+          --teal: #2dd4bf;
+          --teal-soft: #0f2f33;
+          --sun-1: #ffd23e;
+          --sun-2: #ff7a3d;
+          --sun-3: #f43f8e;
+          --sky-1: #2a1650;
+          --sky-2: #170f36;
+          --silhouette: #05030d;
+          --shadow: 0 12px 34px rgba(0, 0, 0, .45);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, p, ul, ol, figure { margin: 0; }
+      ul, ol { padding: 0; list-style: none; }
+      a { color: var(--pink); }
+      img, svg { display: block; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+      /* ---------- Wordmark ---------- */
+      .masthead {
+        display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        padding: 18px 0 6px;
+      }
+      .wordmark { display: flex; align-items: center; gap: 13px; text-decoration: none; color: var(--ink); }
+      .wordmark .badge {
+        width: 46px; height: 46px; flex: none; border-radius: 12px;
+        background: linear-gradient(160deg, var(--sun-1) 0%, var(--sun-2) 48%, var(--sun-3) 100%);
+        display: grid; place-items: center;
+        font-weight: 900; font-size: 21px; letter-spacing: -.02em; color: #fff;
+        text-shadow: 0 1px 3px rgba(90, 0, 40, .45);
+        box-shadow: var(--shadow);
+      }
+      .wordmark .name { font-weight: 900; font-size: 19px; letter-spacing: .01em; line-height: 1.05; text-transform: uppercase; }
+      .wordmark .name span { display: block; font-size: 11px; font-weight: 700; letter-spacing: .34em; color: var(--pink); }
+      .masthead .unofficial {
+        font-size: 12px; font-weight: 600; color: var(--muted);
+        border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; background: var(--panel);
+        white-space: nowrap;
+      }
+
+      /* ---------- Hero ---------- */
+      .hero { position: relative; overflow: hidden; border-radius: 22px; margin-top: 14px; box-shadow: var(--shadow);
+        background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 78%); }
+      .hero-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .hero-inner { position: relative; padding: 52px 28px 40px; text-align: center; }
+      .hero .dateline {
+        display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 600;
+        letter-spacing: .18em; text-transform: uppercase; color: var(--ink);
+        background: color-mix(in srgb, var(--panel) 72%, transparent);
+        border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px;
+      }
+      .hero h1 {
+        margin-top: 22px; font-size: clamp(38px, 7.2vw, 68px); line-height: 1.02;
+        font-weight: 900; letter-spacing: -.015em; text-transform: uppercase;
+      }
+      .hero h1 .thin { display: block; font-size: .42em; font-weight: 800; letter-spacing: .3em; color: var(--pink); margin-bottom: 10px; }
+      .hero .sub { margin: 16px auto 0; max-width: 560px; color: var(--ink); font-size: 18px; font-weight: 500; }
+      .hero .sub strong { font-weight: 800; }
+
+      .countdown { margin: 34px auto 0; max-width: 640px; }
+      .countdown .cd-label { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: .22em; text-transform: uppercase; color: var(--ink); opacity: .85; }
+      .cd-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+      .cd-cell {
+        background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 16px 6px 12px; box-shadow: var(--shadow);
+      }
+      .cd-num { font-family: "IBM Plex Mono", monospace; font-weight: 700; font-size: clamp(30px, 6vw, 46px); line-height: 1; font-variant-numeric: tabular-nums; }
+      .cd-unit { margin-top: 7px; font-size: 11px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--muted); }
+      .cd-note { margin-top: 14px; font-size: 14.5px; color: var(--ink); font-weight: 500; }
+      .cd-note .tz { font-weight: 800; }
+      .live-banner {
+        display: none; margin: 26px auto 0; max-width: 520px; padding: 16px 20px; border-radius: var(--radius);
+        background: var(--teal-soft); border: 1px solid var(--teal); color: var(--ink); font-weight: 700; font-size: 18px;
+      }
+      .hero.live .live-banner { display: block; }
+      .hero.live .countdown { display: none; }
+
+      .hero-cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-weight: 800; font-size: 16px;
+        padding: 12px 22px; border-radius: 999px; min-height: 48px;
+      }
+      .btn-primary { background: var(--ink); color: var(--bg); }
+      .btn-ghost { background: color-mix(in srgb, var(--panel) 78%, transparent); color: var(--ink); border: 1px solid var(--line); }
+      .btn svg { width: 17px; height: 17px; flex: none; }
+
+      /* ---------- Fact strip ---------- */
+      .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+      .fact { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+      .fact .f-icon { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; background: var(--pink-soft); color: var(--pink); margin-bottom: 11px; }
+      .fact .f-icon svg { width: 19px; height: 19px; }
+      .fact .f-label { font-size: 11.5px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); }
+      .fact .f-value { margin-top: 4px; font-size: 19px; font-weight: 800; line-height: 1.25; }
+      .fact .f-note { margin-top: 3px; font-size: 13.5px; color: var(--muted); }
+
+      /* ---------- Sections ---------- */
+      section.block { margin-top: 56px; }
+      .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; }
+      .sec-head .no { font-family: "IBM Plex Mono", monospace; font-weight: 700; color: var(--pink); font-size: 15px; }
+      .sec-head h2 { font-size: clamp(26px, 4.4vw, 36px); font-weight: 900; letter-spacing: -.01em; line-height: 1.12; }
+      .sec-intro { color: var(--muted); max-width: 640px; font-size: 16.5px; }
+      .sec-intro strong { color: var(--ink); }
+
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+      /* Unlock table */
+      .table-scroll { margin-top: 20px; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); }
+      table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+      th, td { text-align: left; padding: 13px 16px; vertical-align: top; }
+      thead th { font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--faint); border-bottom: 1px solid var(--line); background: var(--panel-2); }
+      tbody tr + tr td { border-top: 1px solid var(--line); }
+      td.city { font-weight: 800; white-space: nowrap; }
+      td .zone { display: block; font-weight: 500; font-size: 13px; color: var(--muted); }
+      td.mono, .mono { font-family: "IBM Plex Mono", monospace; font-size: 14.5px; }
+      td.yours { font-weight: 700; color: var(--teal); }
+      .table-note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+
+      /* Timeline */
+      .timeline { margin-top: 22px; position: relative; }
+      .timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+      .tl-item { position: relative; padding: 0 0 22px 34px; }
+      .tl-item:last-child { padding-bottom: 0; }
+      .tl-item::before { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 16px; border-radius: 50%; background: var(--panel); border: 3px solid var(--faint); }
+      .tl-item.done::before { border-color: var(--teal); background: var(--teal); }
+      .tl-item.next::before { border-color: var(--pink); background: var(--pink); box-shadow: 0 0 0 5px var(--pink-soft); }
+      .tl-date { font-family: "IBM Plex Mono", monospace; font-size: 13.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--pink); }
+      .tl-item.done .tl-date { color: var(--teal); }
+      .tl-title { font-weight: 800; font-size: 17.5px; margin-top: 2px; }
+      .tl-text { color: var(--muted); font-size: 15px; max-width: 620px; }
+      .tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; vertical-align: 2px; margin-left: 8px; }
+      .tag-done { background: var(--teal-soft); color: var(--teal); }
+      .tag-next { background: var(--pink-soft); color: var(--pink); }
+
+      /* Editions */
+      .editions { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+      .edition { padding: 24px; position: relative; }
+      .edition.ultimate { border-color: var(--pink); }
+      .edition .e-name { font-size: 13px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+      .edition .e-price { margin-top: 6px; font-size: 40px; font-weight: 900; line-height: 1; }
+      .edition .e-price small { font-size: 15px; font-weight: 600; color: var(--muted); }
+      .edition .e-format { margin-top: 6px; font-size: 14px; color: var(--muted); font-weight: 600; }
+      .edition ul { margin-top: 16px; display: grid; gap: 9px; }
+      .edition li { display: flex; gap: 10px; font-size: 15px; align-items: flex-start; }
+      .edition li svg { width: 17px; height: 17px; flex: none; margin-top: 4px; color: var(--teal); }
+      .edition li.no svg { color: var(--faint); }
+      .edition li.no { color: var(--faint); }
+      .edition .e-flag {
+        position: absolute; top: 18px; right: 18px; font-size: 11px; font-weight: 800; letter-spacing: .1em;
+        text-transform: uppercase; background: var(--pink); color: #fff; padding: 5px 10px; border-radius: 999px;
+      }
+      .price-table { margin-top: 14px; }
+      .upgrade-note { margin-top: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start; }
+      .upgrade-note svg { width: 20px; height: 20px; flex: none; color: var(--amber); margin-top: 2px; }
+      .upgrade-note p { font-size: 15px; color: var(--muted); }
+      .upgrade-note p strong { color: var(--ink); }
+
+      /* Pre-load */
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+      .steps-card { padding: 24px; }
+      .steps-card h3 { font-size: 19px; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+      .steps-card h3 .plat { font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: .14em; background: var(--pink-soft); color: var(--pink); padding: 4px 9px; border-radius: 6px; text-transform: uppercase; }
+      .steps-card ol { margin-top: 14px; display: grid; gap: 12px; counter-reset: step; }
+      .steps-card li { display: flex; gap: 12px; font-size: 15px; color: var(--muted); }
+      .steps-card li strong { color: var(--ink); }
+      .steps-card li::before {
+        counter-increment: step; content: counter(step); flex: none;
+        width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: var(--bg);
+        font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 700;
+        display: grid; place-items: center; margin-top: 1px;
+      }
+      .storage { margin-top: 14px; padding: 22px 24px; }
+      .storage .bar { height: 14px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); overflow: hidden; margin-top: 12px; }
+      .storage .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--sun-2), var(--sun-3)); transition: width 1.2s ease; }
+      .storage .s-row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14.5px; color: var(--muted); }
+      .storage .s-row strong { color: var(--ink); font-size: 17px; }
+
+      /* PC status */
+      .pc-status { margin-top: 20px; padding: 26px; border-style: dashed; }
+      .pc-status .status-line { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .status-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 5px color-mix(in srgb, var(--amber) 18%, transparent); flex: none; }
+      .pc-status .status-text { font-size: 21px; font-weight: 900; }
+      .pc-status p { margin-top: 10px; color: var(--muted); max-width: 680px; font-size: 15.5px; }
+      .pc-status p strong { color: var(--ink); }
+      .pc-facts { margin-top: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .pc-facts div { background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 13px 15px; }
+      .pc-facts .k { font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+      .pc-facts .v { font-weight: 800; font-size: 16px; margin-top: 3px; }
+
+      /* Checklist */
+      .checklist { margin-top: 20px; padding: 10px 24px; }
+      .checklist li { display: flex; gap: 14px; padding: 15px 0; align-items: flex-start; }
+      .checklist li + li { border-top: 1px solid var(--line); }
+      .checklist .box {
+        flex: none; width: 24px; height: 24px; border-radius: 7px; margin-top: 2px;
+        border: 2px solid var(--pink); display: grid; place-items: center; color: var(--pink);
+      }
+      .checklist .box svg { width: 14px; height: 14px; }
+      .checklist .c-title { font-weight: 800; font-size: 16.5px; }
+      .checklist .c-text { color: var(--muted); font-size: 14.5px; }
+
+      /* FAQ */
+      .faq { margin-top: 20px; display: grid; gap: 10px; }
+      .faq details { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+      .faq summary { cursor: pointer; font-weight: 800; font-size: 16.5px; padding: 16px 20px; list-style: none; display: flex; justify-content: space-between; gap: 14px; align-items: center; min-height: 52px; }
+      .faq summary::-webkit-details-marker { display: none; }
+      .faq summary .chev { flex: none; width: 18px; height: 18px; color: var(--pink); transition: transform .2s ease; }
+      .faq details[open ] summary .chev { transform: rotate(180deg); }
+      .faq .a { padding: 0 20px 18px; color: var(--muted); font-size: 15.5px; max-width: 720px; }
+      .faq .a strong { color: var(--ink); }
+
+      /* Official links */
+      .links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
+      .link-card { padding: 20px; text-decoration: none; color: var(--ink); display: block; }
+      .link-card .l-top { display: flex; justify-content: space-between; align-items: flex-start; }
+      .link-card .l-name { font-weight: 900; font-size: 18px; line-height: 1.25; }
+      .link-card .l-desc { color: var(--muted); font-size: 14px; margin-top: 5px; }
+      .link-card svg { width: 18px; height: 18px; color: var(--pink); flex: none; }
+      a.link-card:hover { border-color: var(--pink); }
+
+      footer { margin: 64px 0 0; border-top: 1px solid var(--line); background: var(--bg-deep); }
+      footer .wrap { padding-top: 30px; padding-bottom: 40px; }
+      footer p { font-size: 13.5px; color: var(--muted); max-width: 760px; }
+      footer p + p { margin-top: 10px; }
+      footer .f-title { font-weight: 900; text-transform: uppercase; letter-spacing: .06em; color: var(--ink); font-size: 14px; margin-bottom: 10px; }
+
+      @media (max-width: 760px) {
+        .facts { grid-template-columns: 1fr 1fr; }
+        .editions, .split { grid-template-columns: 1fr; }
+        .pc-facts { grid-template-columns: 1fr; }
+        .links { grid-template-columns: 1fr; }
+        .hero-inner { padding: 40px 18px 32px; }
+        .masthead .unofficial { display: none; }
+        table { font-size: 14.5px; }
+        th, td { padding: 11px 12px; }
+        td.city { white-space: normal; }
+      }
+      @media (max-width: 560px) {
+        .price-table th:last-child, .price-table td:last-child { display: none; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .storage .bar i { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="masthead">
+        <a class="wordmark" href="#top" aria-label="GTA 6 Launch Hub — home">
+          <span class="badge" aria-hidden="true">VI</span>
+          <span class="name">GTA 6<span>Launch Hub</span></span>
+        </a>
+        <span class="unofficial">Unofficial fan page · All content original</span>
+      </header>
+
+      <!-- ============ HERO ============ -->
+      <div class="hero" id="top">
+        <svg class="hero-art" viewBox="0 0 1080 520" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffd23e" />
+              <stop offset="55%" stop-color="#ff7a3d" />
+              <stop offset="100%" stop-color="#f43f8e" />
+            </linearGradient>
+            <clipPath id="sunClip"><circle cx="540" cy="330" r="150" /></clipPath>
+          </defs>
+          <g clip-path="url(#sunClip)">
+            <circle cx="540" cy="330" r="150" fill="url(#sunGrad)" />
+            <rect x="380" y="352" width="320" height="7" fill="var(--sky-2)" opacity="0.55" />
+            <rect x="380" y="376" width="320" height="10" fill="var(--sky-2)" opacity="0.65" />
+            <rect x="380" y="406" width="320" height="14" fill="var(--sky-2)" opacity="0.8" />
+            <rect x="380" y="442" width="320" height="18" fill="var(--sky-2)" />
+          </g>
+          <g fill="var(--silhouette)">
+            <path d="M0 520 L0 452 Q120 428 250 446 Q390 428 540 448 Q700 430 830 448 Q960 430 1080 450 L1080 520 Z" />
+            <path d="M118 520 C112 462 118 408 138 366 C128 402 96 402 66 388 C94 378 118 384 136 362 C112 366 84 348 74 322 C100 334 126 334 140 348 C132 322 138 292 154 270 C158 296 150 322 148 346 C162 322 188 306 214 306 C196 326 172 340 152 356 C182 352 208 364 222 386 C196 384 168 390 150 372 C168 416 172 466 168 520 Z" />
+            <path d="M962 520 C968 470 964 424 948 388 C956 418 984 420 1010 408 C986 398 964 402 950 384 C972 388 996 372 1006 350 C982 360 960 358 946 370 C954 346 948 320 934 300 C930 324 938 346 940 368 C926 346 904 332 880 332 C896 350 918 362 936 376 C908 372 886 382 872 402 C896 400 920 406 936 390 C920 428 916 472 920 520 Z" />
+          </g>
+        </svg>
+        <div class="hero-inner">
+          <span class="dateline">Thursday · November 19, 2026</span>
+          <h1><span class="thin">Grand Theft Auto VI</span>Launch Day<br />Starts Here</h1>
+          <p class="sub">After more than a decade of waiting, the trip back to Vice City begins. GTA 6 unlocks at <strong>midnight, your local time</strong> — on PlayStation 5 and Xbox Series X|S only.</p>
+
+          <div class="countdown" id="countdown" role="timer" aria-label="Countdown to GTA 6 launch">
+            <div class="cd-label">Time until unlock — your time zone</div>
+            <div class="cd-grid">
+              <div class="cd-cell"><div class="cd-num" id="cd-days">–</div><div class="cd-unit">Days</div></div>
+              <div class="cd-cell"><div class="cd-num" id="cd-hours">–</div><div class="cd-unit">Hours</div></div>
+              <div class="cd-cell"><div class="cd-num" id="cd-mins">–</div><div class="cd-unit">Minutes</div></div>
+              <div class="cd-cell"><div class="cd-num" id="cd-secs">–</div><div class="cd-unit">Seconds</div></div>
+            </div>
+            <p class="cd-note">Unlocks <span class="tz" id="cd-when">Thu, Nov 19, 2026 · 12:00 AM</span> where you are (<span id="cd-tz">your time zone</span>).</p>
+          </div>
+          <div class="live-banner">GTA 6 is out now. Leonida is open — see you in Vice City.</div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">
+              Official GTA VI page
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" /></svg>
+            </a>
+            <a class="btn btn-ghost" href="#unlock-times">See unlock times worldwide</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ FACT STRIP ============ -->
+      <div class="facts" aria-label="Key launch facts">
+        <div class="fact">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg></div>
+          <div class="f-label">Release date</div>
+          <div class="f-value">Thu, Nov 19, 2026</div>
+          <div class="f-note">Midnight local time, worldwide</div>
+        </div>
+        <div class="fact">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01M17.3 5H6.7a5 5 0 0 0-4.9 6l1 5A3 3 0 0 0 5.7 18.4c.8.1 1.6-.1 2.2-.7L9.5 16h5l1.6 1.7c.6.6 1.4.8 2.2.7a3 3 0 0 0 2.9-2.4l1-5A5 5 0 0 0 17.3 5Z" /></svg></div>
+          <div class="f-label">Platforms</div>
+          <div class="f-value">PS5 · Xbox Series X|S</div>
+          <div class="f-note">No PS4 or Xbox One version</div>
+        </div>
+        <div class="fact">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" /></svg></div>
+          <div class="f-label">Pre-load</div>
+          <div class="f-value">Open now</div>
+          <div class="f-note">Digital pre-load began Nov 10</div>
+        </div>
+        <div class="fact">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" /><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" /></svg></div>
+          <div class="f-label">Download size</div>
+          <div class="f-value">Up to 212 GB</div>
+          <div class="f-note">Clear space before launch night</div>
+        </div>
+      </div>
+
+      <!-- ============ UNLOCK TIMES ============ -->
+      <section class="block" id="unlock-times">
+        <div class="sec-head"><span class="no">01</span><h2>Unlock times around the world</h2></div>
+        <p class="sec-intro">There is no single global launch moment. The game unlocks at <strong>12:00 AM on Thursday, November 19 in each region</strong>, so players in Auckland will be driving through Leonida while New York is still having lunch on the 18th — and Honolulu unlocks a full 23 hours after Auckland. The table below covers 31 cities across every continent; the last column converts each city's unlock into <strong>your</strong> local time.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th scope="col">City</th><th scope="col">Unlocks (local)</th><th scope="col">In UTC</th><th scope="col">In your time</th></tr>
+            </thead>
+            <tbody id="tz-body">
+              <tr data-offset="780"><td class="city">Auckland<span class="zone">New Zealand · NZDT (UTC+13)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 11:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="660"><td class="city">Sydney<span class="zone">Australia · AEDT (UTC+11)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 1:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="540"><td class="city">Tokyo<span class="zone">Japan · JST (UTC+9)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 3:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="540"><td class="city">Seoul<span class="zone">South Korea · KST (UTC+9)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 3:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="480"><td class="city">Beijing<span class="zone">China · CST (UTC+8)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 4:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="480"><td class="city">Singapore<span class="zone">Singapore · SGT (UTC+8)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 4:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="480"><td class="city">Perth<span class="zone">Australia · AWST (UTC+8)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 4:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="420"><td class="city">Bangkok<span class="zone">Thailand · ICT (UTC+7)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 5:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="420"><td class="city">Jakarta<span class="zone">Indonesia · WIB (UTC+7)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 5:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="360"><td class="city">Dhaka<span class="zone">Bangladesh · BST (UTC+6)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 6:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="330"><td class="city">Mumbai<span class="zone">India · IST (UTC+5:30)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 6:30 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="300"><td class="city">Karachi<span class="zone">Pakistan · PKT (UTC+5)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 7:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="240"><td class="city">Dubai<span class="zone">UAE · GST (UTC+4)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 8:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="180"><td class="city">Riyadh<span class="zone">Saudi Arabia · AST (UTC+3)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 9:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="180"><td class="city">Istanbul<span class="zone">Türkiye · TRT (UTC+3)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 9:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="120"><td class="city">Cairo<span class="zone">Egypt · EET (UTC+2)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 10:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="120"><td class="city">Johannesburg<span class="zone">South Africa · SAST (UTC+2)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 10:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="60"><td class="city">Berlin<span class="zone">Germany · CET (UTC+1)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 11:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="60"><td class="city">Paris<span class="zone">France · CET (UTC+1)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Wed Nov 18 · 11:00 PM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="0"><td class="city">London<span class="zone">United Kingdom · GMT (UTC+0)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-180"><td class="city">São Paulo<span class="zone">Brazil · BRT (UTC−3)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 3:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-180"><td class="city">Buenos Aires<span class="zone">Argentina · ART (UTC−3)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 3:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-300"><td class="city">New York<span class="zone">USA · EST (UTC−5)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 5:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-300"><td class="city">Toronto<span class="zone">Canada · EST (UTC−5)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 5:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-360"><td class="city">Chicago<span class="zone">USA · CST (UTC−6)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 6:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-360"><td class="city">Mexico City<span class="zone">Mexico · CST (UTC−6)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 6:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-420"><td class="city">Denver<span class="zone">USA · MST (UTC−7)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 7:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-480"><td class="city">Los Angeles<span class="zone">USA · PST (UTC−8)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 8:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-480"><td class="city">Vancouver<span class="zone">Canada · PST (UTC−8)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 8:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-540"><td class="city">Anchorage<span class="zone">USA · AKST (UTC−9)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 9:00 AM</td><td class="yours mono">—</td></tr>
+              <tr data-offset="-600"><td class="city">Honolulu<span class="zone">USA · HST (UTC−10)</span></td><td class="mono">Thu Nov 19 · 12:00 AM</td><td class="mono">Thu Nov 19 · 10:00 AM</td><td class="yours mono">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Times follow the console stores' regional listings, which show a midnight local unlock. Your unlock follows the region of your store account — a copy bought on another region's store unlocks on that region's clock.</p>
+      </section>
+
+      <!-- ============ KEY DATES ============ -->
+      <section class="block" id="key-dates">
+        <div class="sec-head"><span class="no">02</span><h2>The road to launch</h2></div>
+        <p class="sec-intro">Every date that matters, in order — what has already happened, and what is still to come before the bonus window closes.</p>
+        <div class="timeline">
+          <div class="tl-item done">
+            <div class="tl-date">Thu · Jun 25, 2026 <span class="tag tag-done">Done</span></div>
+            <div class="tl-title">Pre-orders opened worldwide</div>
+            <p class="tl-text">Both editions went on sale on the PlayStation Store, the Xbox Store and at retailers — and pre-orders reportedly passed one billion dollars before launch week even began.</p>
+          </div>
+          <div class="tl-item done">
+            <div class="tl-date">Tue · Nov 10, 2026 <span class="tag tag-done">Done</span></div>
+            <div class="tl-title">Digital pre-load began</div>
+            <p class="tl-text">Rockstar moved pre-load forward from its original November 12 slot. Anyone with a digital pre-order can download the full game now and simply wait for the unlock.</p>
+          </div>
+          <div class="tl-item done">
+            <div class="tl-date">Thu · Nov 12, 2026 <span class="tag tag-done">Done</span></div>
+            <div class="tl-title">Boxed copies reached stores</div>
+            <p class="tl-text">The physical Standard Edition arrived at retailers — a box containing a download code, not a disc — so boxed buyers could start their pre-load too.</p>
+          </div>
+          <div class="tl-item next">
+            <div class="tl-date">Thu · Nov 19, 2026 <span class="tag tag-next">Launch</span></div>
+            <div class="tl-title">GTA 6 launches</div>
+            <p class="tl-text">The game unlocks at midnight local time on PlayStation 5 and Xbox Series X|S. Jason and Lucia's story across the state of Leonida begins.</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Fri · Nov 20, 2026</div>
+            <div class="tl-title">Pre-order bonus cutoff</div>
+            <p class="tl-text">Buy before this date and the Vintage Vice City Pack is included at no extra cost with either edition. Digital buyers also receive one month of GTA+.</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Wed · Mar 31, 2027</div>
+            <div class="tl-title">GTA+ claim deadline</div>
+            <p class="tl-text">The free GTA+ month bundled with digital purchases must be claimed by this date, on the same account that bought the game.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDITIONS & PRICES ============ -->
+      <section class="block" id="editions">
+        <div class="sec-head"><span class="no">03</span><h2>Editions &amp; prices</h2></div>
+        <p class="sec-intro">Two editions, one game. Both contain the <strong>complete single-player story</strong> — the Ultimate Edition layers extra in-game gear on top; it is not a different or longer campaign.</p>
+        <div class="editions">
+          <div class="card edition">
+            <div class="e-name">Standard Edition</div>
+            <div class="e-price">$79.99 <small>US list price</small></div>
+            <div class="e-format">Digital download, or boxed copy with a download code inside</div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>The full Grand Theft Auto VI game</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>Vintage Vice City Pack if bought before Nov 20</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>One month of GTA+ with a digital purchase</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>Can add the Ultimate extras later via the Upgrade</span></li>
+              <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" /></svg><span>No disc in the box — it holds a download code</span></li>
+            </ul>
+          </div>
+          <div class="card edition ultimate">
+            <span class="e-flag">Digital only</span>
+            <div class="e-name">Ultimate Edition</div>
+            <div class="e-price">$99.99 <small>US list price</small></div>
+            <div class="e-format">Digital download only — there is no boxed Ultimate Edition</div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>Everything in the Standard Edition</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span><strong>16 exclusive items</strong>&nbsp;— vehicles, weapons, outfits and dedicated shops</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>Extras unlock gradually as the story progresses, not all at once</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg><span>Vintage Vice City Pack + GTA+ month on the same terms</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-scroll price-table">
+          <table>
+            <thead>
+              <tr><th scope="col">Region</th><th scope="col">Standard</th><th scope="col">Ultimate</th><th scope="col">Difference</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="city">United States</td><td class="mono">$79.99</td><td class="mono">$99.99</td><td class="mono">$20.00</td></tr>
+              <tr><td class="city">United Kingdom</td><td class="mono">£69.99</td><td class="mono">£89.99</td><td class="mono">£20.00</td></tr>
+              <tr><td class="city">Eurozone</td><td class="mono">€79.99</td><td class="mono">€99.99</td><td class="mono">€20.00</td></tr>
+              <tr><td class="city">India</td><td class="mono">₹5,999</td><td class="mono">₹7,499</td><td class="mono">₹1,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">List prices as shown on the PlayStation Store and Xbox Store listings checked in November 2026. Regional pricing and taxes vary — confirm the price on your own store before paying.</p>
+
+        <div class="card upgrade-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
+          <p><strong>Not sure which to buy?</strong> Choosing Standard does not lock you out of anything. The Ultimate Edition Upgrade is sold separately (US$20 on the Xbox Store), so you can start with the base game and add the 16 extras later if you want them.</p>
+        </div>
+      </section>
+
+      <!-- ============ PRE-LOAD ============ -->
+      <section class="block" id="preload">
+        <div class="sec-head"><span class="no">04</span><h2>Pre-load: be ready at midnight</h2></div>
+        <p class="sec-intro">At up to <strong>212 GB</strong>, this is not a download you want to start at 11:58 PM. Pre-load is already open — here is how to finish it on each console.</p>
+        <div class="split">
+          <div class="card steps-card">
+            <h3>PlayStation 5 <span class="plat">PS5</span></h3>
+            <ol>
+              <li><span><strong>Find the game</strong> in your Game Library, under the Purchased tab — it appears there as soon as a pre-order goes through.</span></li>
+              <li><span><strong>Select GTA VI and choose Download.</strong> Pre-load opened at midnight local time on November 10.</span></li>
+              <li><span><strong>Keep rest mode download-friendly:</strong> in Settings, allow the console to stay connected to the internet in rest mode so the download finishes unattended.</span></li>
+              <li><span><strong>At midnight on Nov 19</strong> the licence activates and the game icon unlocks — no second download needed.</span></li>
+            </ol>
+          </div>
+          <div class="card steps-card">
+            <h3>Xbox Series X|S <span class="plat">Xbox</span></h3>
+            <ol>
+              <li><span><strong>Open My games &amp; apps</strong> and find Grand Theft Auto VI in your library after pre-ordering.</span></li>
+              <li><span><strong>Choose Install.</strong> Xbox pre-load opened November 10 at 12:00 AM GMT (7:00 PM ET on November 9).</span></li>
+              <li><span><strong>Bought the boxed copy?</strong> Redeem the code inside the box, then install the same way — boxed-code pre-load began November 12.</span></li>
+              <li><span><strong>At midnight on Nov 19</strong> your copy unlocks automatically; a small day-one update may still apply.</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="card storage">
+          <div class="s-row"><span><strong>Up to 212 GB</strong> — the figure Rockstar and PlayStation publish for the full install</span><span>Free up <strong>220 GB+</strong> to be safe</span></div>
+          <div class="bar" aria-hidden="true"><i id="size-bar"></i></div>
+          <div class="s-row"><span>Consoles also need working room for the day-one update and your save data.</span><span class="mono">212 GB ≈ a fifth of a 1 TB drive</span></div>
+        </div>
+      </section>
+
+      <!-- ============ PC STATUS ============ -->
+      <section class="block" id="pc">
+        <div class="sec-head"><span class="no">05</span><h2>What about PC?</h2></div>
+        <p class="sec-intro">The most-searched GTA 6 question after the release date itself — and the one with the shortest honest answer.</p>
+        <div class="card pc-status">
+          <div class="status-line"><span class="status-dot" aria-hidden="true"></span><span class="status-text">No PC version has been announced.</span></div>
+          <p>Rockstar has given <strong>no PC release date, no PC price and no system requirements</strong> — there is no Steam page and nothing to pre-order. Every official listing names PlayStation 5 and Xbox Series X|S as the only launch platforms. Anything you see elsewhere claiming a PC download, a PC key or a "leaked build" is not from Rockstar: treat it as a scam risk, not a shortcut.</p>
+          <p>When — and if — a PC version is announced, it will appear on Rockstar's official GTA VI page and Newswire first. Until it does, this section stays exactly as it is: unannounced.</p>
+          <div class="pc-facts">
+            <div><div class="k">PC release date</div><div class="v">Not announced</div></div>
+            <div><div class="k">Steam / Epic listing</div><div class="v">None</div></div>
+            <div><div class="k">Launch platforms</div><div class="v">PS5 · Xbox Series X|S</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CHECKLIST ============ -->
+      <section class="block" id="checklist">
+        <div class="sec-head"><span class="no">06</span><h2>Launch-night checklist</h2></div>
+        <p class="sec-intro">Five small things to sort out before Thursday, so midnight is spent playing — not downloading, updating or hunting for cables.</p>
+        <ul class="card checklist">
+          <li>
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg></span>
+            <div><div class="c-title">Finish the pre-load</div><div class="c-text">Start it today if you haven't. Up to 212 GB takes hours even on fast connections, and launch-night store traffic will not make it quicker.</div></div>
+          </li>
+          <li>
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg></span>
+            <div><div class="c-title">Clear 220 GB of storage</div><div class="c-text">Delete or archive games you are not playing. Leave headroom for the day-one update on top of the base install.</div></div>
+          </li>
+          <li>
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg></span>
+            <div><div class="c-title">Update the console itself</div><div class="c-text">Install any pending system software update now, and charge your controller — a firmware prompt at 12:01 AM is a rite of passage nobody enjoys.</div></div>
+          </li>
+          <li>
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg></span>
+            <div><div class="c-title">Check your edition and bonus</div><div class="c-text">Buying before November 20 keeps the Vintage Vice City Pack included. Digital buyers: note the GTA+ month must be claimed by March 31, 2027.</div></div>
+          </li>
+          <li>
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg></span>
+            <div><div class="c-title">Go spoiler-quiet</div><div class="c-text">Players in Auckland unlock a full 23 hours before Honolulu — and 21 hours before Los Angeles. Mute the obvious keywords on social media until you have played the opening yourself.</div></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="block" id="faq">
+        <div class="sec-head"><span class="no">07</span><h2>Quick answers</h2></div>
+        <div class="faq">
+          <details>
+            <summary>What time exactly can I start playing?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a">At <strong>12:00 AM on Thursday, November 19, 2026, in your local time zone</strong>, per the console store listings. If you pre-loaded, the game unlocks in place — expect at most a small day-one update before you can play.</p>
+          </details>
+          <details>
+            <summary>Is GTA 6 coming to PC?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a"><strong>Not that Rockstar has announced.</strong> There is no PC release date, no Steam page and no PC pre-order. Launch platforms are PlayStation 5 and Xbox Series X|S only, and there are no PS4 or Xbox One versions either.</p>
+          </details>
+          <details>
+            <summary>Does the boxed copy contain a disc?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a"><strong>No.</strong> Rockstar's own store wording is explicit: the physical Standard Edition box contains a download code only — "a disc will not be included in the box." The code lets you pre-load from November 12.</p>
+          </details>
+          <details>
+            <summary>Standard or Ultimate — and can I change my mind?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a">Both editions are the same full game. Ultimate adds <strong>16 exclusive items</strong> — vehicles, weapons, outfits and shops — that unlock as the story progresses, for $20 / £20 / €20 / ₹1,500 more. If you buy Standard first, the <strong>Ultimate Edition Upgrade</strong> is sold separately, so you can add the extras later at the same difference.</p>
+          </details>
+          <details>
+            <summary>How much storage do I need?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a">Rockstar puts the install at <strong>up to 212 GB</strong>, depending on your console. Free up a little more than that — around 220 GB — so the day-one update and save data have room too.</p>
+          </details>
+          <details>
+            <summary>What do I get for buying early?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <p class="a">Pre-orders and purchases made <strong>before November 20, 2026</strong> include the Vintage Vice City Pack at no extra cost, and digital purchases also include <strong>one month of GTA+</strong>, claimable until March 31, 2027 on the buying account. There is no early-access play window — everyone starts at midnight.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ============ OFFICIAL LINKS ============ -->
+      <section class="block" id="official">
+        <div class="sec-head"><span class="no">08</span><h2>Go to the source</h2></div>
+        <p class="sec-intro">This hub is a fan-made summary. For anything that decides a purchase — price, region, terms — the official pages win.</p>
+        <div class="links">
+          <a class="card link-card" href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">
+            <div class="l-top"><span class="l-name">Rockstar's GTA VI page</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" /></svg></div>
+            <p class="l-desc">The official game page: trailers, announcements and the publisher's own launch information.</p>
+          </a>
+          <a class="card link-card" href="https://www.rockstargames.com/newswire" target="_blank" rel="noopener">
+            <div class="l-top"><span class="l-name">Rockstar Newswire</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" /></svg></div>
+            <p class="l-desc">Rockstar's announcement feed — the first place any PC version or delay would be confirmed.</p>
+          </a>
+          <a class="card link-card" href="https://store.playstation.com/en-us/product/EP1004-PPSA01547_00-GTAVISTANDARD001" target="_blank" rel="noopener">
+            <div class="l-top"><span class="l-name">PlayStation Store listing</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" /></svg></div>
+            <p class="l-desc">The official US PS5 listing with both editions, the GTA+ offer and its full terms.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <p class="f-title">GTA 6 Launch Hub</p>
+        <p>An unofficial, fan-made page. Every word, graphic and piece of artwork on this page was created for it — no Rockstar Games artwork, logos, screenshots or trailer material is used. Facts were summarised in November 2026 from Rockstar's official pages, Rockstar Support, and the PlayStation Store and Xbox Store listings; prices and dates can change, so verify on the official store before buying.</p>
+        <p>Grand Theft Auto, GTA and GTA VI are trademarks of Take-Two Interactive Software. This page is not affiliated with, sponsored or endorsed by Rockstar Games or Take-Two Interactive.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        // Launch: midnight local time, Thursday November 19, 2026, in the visitor's own time zone.
+        var launch = new Date(2026, 10, 19, 0, 0, 0);
+        var hero = document.querySelector('.hero');
+        var el = {
+          days: document.getElementById('cd-days'),
+          hours: document.getElementById('cd-hours'),
+          mins: document.getElementById('cd-mins'),
+          secs: document.getElementById('cd-secs'),
+          when: document.getElementById('cd-when'),
+          tz: document.getElementById('cd-tz')
+        };
+        function pad(n) { return (n < 10 ? '0' : '') + n; }
+        try {
+          el.tz.textContent = Intl.DateTimeFormat().resolvedOptions().timeZone.replace(/_/g, ' ');
+        } catch (e) { el.tz.textContent = 'local time'; }
+        el.when.textContent = launch.toLocaleString(undefined, {
+          weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit'
+        });
+        function tick() {
+          var diff = launch.getTime() - Date.now();
+          if (diff <= 0) {
+            hero.classList.add('live');
+            return false;
+          }
+          var s = Math.floor(diff / 1000);
+          el.days.textContent = Math.floor(s / 86400);
+          el.hours.textContent = pad(Math.floor(s % 86400 / 3600));
+          el.mins.textContent = pad(Math.floor(s % 3600 / 60));
+          el.secs.textContent = pad(s % 60);
+          return true;
+        }
+        if (tick()) {
+          var timer = setInterval(function () { if (!tick()) clearInterval(timer); }, 1000);
+        }
+
+        // Convert each city's midnight-local unlock into the visitor's local time.
+        var fmt = new Intl.DateTimeFormat(undefined, {
+          weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+        });
+        var rows = document.querySelectorAll('#tz-body tr');
+        for (var i = 0; i < rows.length; i++) {
+          var offsetMin = parseInt(rows[i].getAttribute('data-offset'), 10);
+          var unlockUtc = Date.UTC(2026, 10, 19, 0, 0, 0) - offsetMin * 60000;
+          rows[i].querySelector('.yours').textContent = fmt.format(new Date(unlockUtc));
+        }
+
+        // Storage bar: 212 GB of a 1 TB drive.
+        var bar = document.getElementById('size-bar');
+        if (bar) {
+          requestAnimationFrame(function () {
+            setTimeout(function () { bar.style.width = '21.2%'; }, 150);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
